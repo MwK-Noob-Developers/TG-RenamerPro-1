@@ -62,11 +62,11 @@ async def start_msg(c,m):
         reply_markup=InlineKeyboardMarkup(
             [
                [
-                InlineKeyboardButton("⚙ Updates Channel", url=f"https://t.me/mwklinks"),
-                    InlineKeyboardButton("🛠 Support Group", url=f"https://t.me/redbullfed")
+                InlineKeyboardButton("📢 Updates", url=f"https://t.me/mwklinks"),
+                    InlineKeyboardButton("💬 Support", url=f"https://t.me/redbullfed")
                 ],
                 [
-                    InlineKeyboardButton("👨‍🔬 Developer", url=f"https://t.me/shamilnelli")
+                    InlineKeyboardButton("🤖 Developer", url=f"https://t.me/shamilnelli")
                 ]
             ]
         ),
