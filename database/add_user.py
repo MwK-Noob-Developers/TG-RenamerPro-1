@@ -1,5 +1,5 @@
-from configs import Config
-from helpers.database.access_db import db
+from mwk.config import Config
+from database.access_db import db
 from pyrogram import Client
 from pyrogram.types import Message
 
