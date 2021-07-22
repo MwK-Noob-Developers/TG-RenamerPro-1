@@ -12,4 +12,4 @@ class Config(object):
   UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1271358814))
   MONGODB_URI = os.environ.get("MONGODB_URI", "")
-  BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
+  BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True)) 
