@@ -8,3 +8,8 @@ psycopg2-binary
 feedparser
 requests
 ffmpeg
+dnspython
+aiofiles
+motor
+pyromod
+psutil
