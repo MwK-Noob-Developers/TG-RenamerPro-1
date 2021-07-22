@@ -61,7 +61,7 @@ async def start_msg(c,m):
               ])
             )
             return
-    await AddUserToDatabase(bot, event),
+    await AddUserToDatabase(c, m),
     await m.reply_text(Translation.START_TEXT.format(m.from_user.first_name),
         reply_markup=InlineKeyboardMarkup(
             [
