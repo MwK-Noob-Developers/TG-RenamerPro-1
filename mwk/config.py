@@ -11,5 +11,5 @@ class Config(object):
   CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION",False)
   UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", 1271358814)
-  MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://filterbot:filterbot@cluster0.nruv2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+  MONGODB_URI = os.environ.get("MONGODB_URI", mongodb+srv://filterbot:filterbot@cluster0.nruv2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority)
   BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
