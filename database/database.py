@@ -42,10 +42,3 @@ class Database:
     async def get_upload_as_doc(self, id):
         user = await self.col.find_one({'id': int(id)})
         return user.get('upload_as_doc', False)
-
-    async def set_thumbnail(self, id, thumbnail):
-        await self.col.update_one({'id': id}, {'$set': {'thumbnail': thumbnail}})
-
-    async def get_thumbnail(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('thumbnail', None)
