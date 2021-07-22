@@ -14,6 +14,9 @@ else:
     from config import Config
 
 # the Strings used for this "thing"
+from database.add_user import AddUserToDatabase
+from mwk.shamil.broadcast import broadcast_handler
+from database.access_db import db
 from mwk.messages import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -58,6 +61,7 @@ async def start_msg(c,m):
               ])
             )
             return
+    await AddUserToDatabase(bot, event),
     await m.reply_text(Translation.START_TEXT.format(m.from_user.first_name),
         reply_markup=InlineKeyboardMarkup(
             [
